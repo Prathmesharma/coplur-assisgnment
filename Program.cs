@@ -28,11 +28,14 @@ public class Program
 
 public class Customer
 {
+    //srp
     public int CustomerId { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Email { get; set; }
     public CustomerType Type { get; set; }
+
+    //ocp
     public void Register(Customer cust)
     {
         try
@@ -72,7 +75,7 @@ public class Customer
             Console.WriteLine($"Log Error: {ex.Message}");
         }
     }
-
+//lsp
     public virtual bool SaveCustomer()
     {
         //save customer details to database
@@ -105,6 +108,8 @@ public class Customer
         return 12;
     }
 
+    //dip
+
     public void ProcessOrder(Customer cust)
     {
         GetDiscountPercentage();
@@ -118,7 +123,7 @@ public class Customer
         Console.WriteLine("Order Placed Successfully");
     }
 }
-
+//isp
 public class Leads : Customer
 {
     //It is just a lead so need to save it in the database
