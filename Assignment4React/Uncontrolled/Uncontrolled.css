@@ -1,0 +1,47 @@
+#EmployeeForm {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+#EmployeeForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+#EmployeeForm label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#EmployeeForm input[type="text"],
+#EmployeeForm input[type="number"],
+#EmployeeForm input[type="email"],
+#EmployeeForm select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#EmployeeForm input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#EmployeeForm input[type="submit"]:hover {
+  background-color: #45a049;
+}
